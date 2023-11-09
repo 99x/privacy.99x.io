@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprivacy_framework=self.webpackChunkprivacy_framework||[]).push([[2946],{1927:a=>{a.exports=JSON.parse('{"permalink":"/privacy-framework-99x/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
