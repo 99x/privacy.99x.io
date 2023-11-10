@@ -6,8 +6,8 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary: #331c7a;
+  --ifm-color-secondary: #FF5655;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
   --ifm-color-primary-light: #33925d;
@@ -15,16 +15,92 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-link-hover-color: #ffffff;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary: #331c7a;
+  --ifm-color-secondary: #FF5655;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-breadcrumb-item-background-active: rgb(255 255 255 / 0.4);
+  --ifm-menu-color-background-active: rgb(255 255 255 / 0.4);
+  --ifm-menu-color-background-hover: rgb(255 255 255 / 0.4);
+}
+
+.navbar {
+  background: var(--ifm-color-primary);
+  color: #ffffff;
+  justify-content: center;
+}
+
+.navbar__inner {
+  max-width: 1320px;
+}
+
+.navbar__link,
+.navbar__link:hover,
+.navbar__link:focus {
+  color: #ffffff;
+}
+
+.navbar__brand {
+  color: #ffffff;
+  flex-direction: row-reverse;
+}
+
+.navbar__logo {
+  margin: 0 0.5rem;
+}
+
+.navbar-sidebar__brand {
+  background: var(--ifm-color-primary);
+}
+
+.button {
+  border-radius: 50px;
+  padding: 14px 48px;
+}
+
+.button.button--secondary {
+  color: #ffffff;
+}
+
+.button.button--secondary:hover,
+.button.button--secondary:focus {
+  background-color: #FF5655;
+}
+
+.footer {
+  background-color: var(--ifm-color-primary);
+  padding-top: 90px;
+}
+
+.footer__link-item {
+  color: #99A1B2;
+  text-decoration: none !important;
+}
+
+.footer__link-item:hover,
+.footer__link-item:focus {
+  color: #FF5655;
+}
+
+.footer__copyright {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.footer__links {
+  margin-bottom: 60px;
+}
+
+.footer__title {
+  font-size: 18px;
+  font-weight: 600;
 }
