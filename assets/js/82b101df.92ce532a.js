@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprivacy_framework=self.webpackChunkprivacy_framework||[]).push([[7298],{1644:a=>{a.exports=JSON.parse('{"label":"docusaurus","permalink":"/privacy.99x.io/blog/tags/docusaurus","allTagsPath":"/privacy.99x.io/blog/tags","count":4,"unlisted":false}')}}]);

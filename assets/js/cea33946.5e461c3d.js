@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprivacy_framework=self.webpackChunkprivacy_framework||[]).push([[4189],{7134:a=>{a.exports=JSON.parse('{"label":"hello","permalink":"/privacy.99x.io/blog/tags/hello","allTagsPath":"/privacy.99x.io/blog/tags","count":2,"unlisted":false}')}}]);
