@@ -74,14 +74,13 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            sidebarId: 'knowlegeBaseSidebar',
+            position: 'right',
+            label: 'Knowlege Base',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/99x/privacy.99x.io',
-            label: 'GitHub',
+            label: 'Contribute',
             position: 'right',
           },
         ],
