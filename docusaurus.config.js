@@ -93,7 +93,7 @@ const config = {
             items: [
               {
                 label: 'Privacy at 99x',
-                to: '/docs/intro',
+                to: '/docs/',
               },
             ]
           },
