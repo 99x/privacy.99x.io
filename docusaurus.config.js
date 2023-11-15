@@ -95,6 +95,10 @@ const config = {
                 label: 'Privacy at 99x',
                 to: '/docs/',
               },
+              {
+                label: 'Architecture at 99x',
+                to: 'https://architecture.99x.io/',
+              },
             ]
           },
           {
@@ -105,7 +109,7 @@ const config = {
                 href: 'https://www.linkedin.com/company/99xio'
               },
               {
-                label: 'Discord',
+                label: 'Facebook',
                 href: 'https://www.facebook.com/99xio'
               },
               {
