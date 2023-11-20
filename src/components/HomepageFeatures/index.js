@@ -8,7 +8,7 @@ const FeatureList = [
   {
     title: 'European Union',
     image: '/img/Flag_of_Europe.svg',
-    redirectUrl : 'docs/europe/introduction-to-eu-privacy',
+    redirectUrl : 'docs/europe/introduction-to-privacy-in-eu',
     description: (
       <>
         Introduction to privacy regulations in European Union.
