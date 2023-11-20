@@ -1,50 +1,66 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'European Union',
+    image: '/img/Flag_of_Europe.svg',
+    redirectUrl : 'docs/europe/introduction-to-eu-privacy',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Introduction to privacy regulations in European Union.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'United States of America',
+    image: '/img/Flag_of_the_United_States.svg',
+    redirectUrl : 'docs/usa/introduction-to-privacy-in-usa',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Introduction to privacy regulations in United States of America.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'United Kingdom',
+    image: '/img/Flag_of_the_United_Kingdom.svg',
+    redirectUrl : 'docs/uk/introduction-to-uk-privacy',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Introduction to privacy regulations in United Kingdom.
+      </>
+    ),
+  },
+  {
+    title: 'Commonwealth of Australia',
+    image: '/img/Flag_of_Australia.svg',
+    redirectUrl : 'docs/australia/introduction-to-privacy-in-australia',
+    description: (
+      <>
+        Introduction to privacy regulations in Commonwealth of Australia.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, description, redirectUrl, image}) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
+    <div className={clsx('col col--3')}>
+      <Link to={useBaseUrl(redirectUrl)} className="text--no-decoration">
+        <div className={clsx('text--primary', styles.card)}>
+          <div className="text--center">
+            <img src={useBaseUrl(image)} width="160" height="100" alt={title} />
+          </div>
+          <div className="text--center padding-horiz--md">
+            <Heading as="h3">{title}</Heading>
+            <p>{description}</p>
+          </div>
+        </div>
+      </Link>
     </div>
   );
 }
@@ -52,7 +68,7 @@ function Feature({Svg, title, description}) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
+      <div className="container py-100">
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
