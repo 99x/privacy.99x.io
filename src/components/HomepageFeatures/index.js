@@ -28,7 +28,7 @@ const FeatureList = [
   {
     title: 'United Kingdom',
     image: '/img/Flag_of_the_United_Kingdom.svg',
-    redirectUrl : 'docs/uk/introduction-to-uk-privacy',
+    redirectUrl : 'docs/uk/introduction-to-privacy-in-uk',
     description: (
       <>
         Introduction to privacy regulations in United Kingdom.
