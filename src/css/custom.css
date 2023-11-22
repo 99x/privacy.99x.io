@@ -76,7 +76,7 @@
 
 .hero--primary {
   background-image: url('../../static/img/home-banner.jpg');
-  background-position: center center;
+  background-position: 25% 50%;
   background-size: cover;
   background-color: var(--ifm-color-primary);
 }
