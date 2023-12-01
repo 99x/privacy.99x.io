@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Introduction to privacy regulations in European Union
 
-## Key words
+## Keywords
 
   - Natural person – a living, breathing human being
   - Legal person – not natural person, but have their own legal rights –
